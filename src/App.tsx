@@ -77,7 +77,7 @@ function App() {
           {showForm ? "Close" : "Add Friend"}
         </Button>
       </div>
-      {selected && <SplitBill Selected={selected} onSplitBill={handleSplit} />}
+      {selected && <SplitBill key={selected.id} Selected={selected} onSplitBill={handleSplit} />}
     </div>
   );
 }
